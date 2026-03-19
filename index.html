@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bino Explorer — Discover WhatsApp's Smartest Search Assistant</title>
+  <meta name="description" content="Discover Bino — your AI-powered WhatsApp search assistant. Try the interactive demo, build smart queries, and find anything, anywhere.">
+  <meta property="og:title" content="Bino Explorer — Try WhatsApp's Smartest Search">
+  <meta property="og:description" content="Interactive demo of Bino. See how WhatsApp search works, build your first query, and start finding anything, anywhere.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#25D366">
+  <link rel="icon" href="https://bino.bot/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">🔍</span>
+        <span class="logo-text">Bino <span class="logo-sub">Explorer</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#simulator" class="nav-link">Live Demo</a>
+        <a href="#query-builder" class="nav-link">Query Builder</a>
+        <a href="#for-everyone" class="nav-link">For Everyone</a>
+        <a href="#embed" class="nav-link">Embed</a>
+      </div>
+      <a href="https://wa.me/919800081110" target="_blank" rel="noopener" class="nav-cta" id="navCta">
+        <span class="wa-icon">💬</span> Message Bino
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO SECTION ======================== -->
+  <section id="hero">
+    <div class="hero-bg-effects">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-left">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Powered by AI · Available on WhatsApp
+        </div>
+        <h1 class="hero-title reveal">
+          Find <span class="gradient-text">Anything</span>,<br>
+          <span class="gradient-text">Anywhere</span> — Instantly
+        </h1>
+        <p class="hero-subtitle reveal">
+          Bino is your AI-powered search assistant on WhatsApp. Get instant options, real-time quotes, price comparisons, and custom offers — all in one chat.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#simulator" class="btn btn-primary btn-glow">
+            <span>🎬</span> See Live Demo
+          </a>
+          <a href="#query-builder" class="btn btn-outline">
+            <span>⚡</span> Build Your Query
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-number">100K+</span>
+            <span class="stat-label">Verified Partners <span class="dummy-tag">(dummy)</span></span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Cities Covered <span class="dummy-tag">(dummy)</span></span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Always Available</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="hero-phone">
+          <div class="phone-notch"></div>
+          <div class="phone-header">
+            <div class="phone-header-back">←</div>
+            <div class="phone-header-avatar">🤖</div>
+            <div class="phone-header-info">
+              <span class="phone-header-name">Bino</span>
+              <span class="phone-header-status">online</span>
+            </div>
+          </div>
+          <div class="phone-chat" id="heroChat">
+            <div class="chat-date-badge">Today</div>
+            <div class="chat-bubble sent hero-msg" style="--delay:0.5s">
+              <p>Need a plumber in Koramangala urgently 🔧</p>
+              <span class="chat-time">9:41 AM <span class="read-receipt">✓✓</span></span>
+            </div>
+            <div class="chat-bubble received hero-msg" style="--delay:1.5s">
+              <p>On it! 🔍 Searching verified plumbers near Koramangala...</p>
+              <span class="chat-time">9:41 AM</span>
+            </div>
+            <div class="chat-bubble received hero-msg" style="--delay:3s">
+              <p>Found <strong>3 verified plumbers</strong> available now:</p>
+              <p>🔧 Ramesh Plumbing — ⭐4.8 — ₹350/hr<br>
+              🔧 QuickFix Pro — ⭐4.6 — ₹400/hr<br>
+              🔧 City Repairs — ⭐4.9 — ₹500/hr</p>
+              <p>All rated 4.5+ by real users. Want me to connect you?</p>
+              <span class="chat-time">9:42 AM</span>
+            </div>
+          </div>
+          <div class="phone-input">
+            <span>Type a message...</span>
+            <span class="phone-mic">🎤</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ======================== PIPELINE SIMULATOR ======================== -->
+  <section id="simulator">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Interactive Demo</span>
+        <h2 class="section-title">See Bino in Action</h2>
+        <p class="section-subtitle">Pick a category and watch a real conversation unfold — this is exactly how Bino works on WhatsApp.</p>
+      </div>
+
+      <div class="simulator-categories reveal" id="simCategories">
+        <button class="sim-cat active" data-category="travel">
+          <span class="sim-cat-icon">✈️</span>
+          <span class="sim-cat-label">Travel</span>
+        </button>
+        <button class="sim-cat" data-category="home">
+          <span class="sim-cat-icon">🏠</span>
+          <span class="sim-cat-label">Home & Repairs</span>
+        </button>
+        <button class="sim-cat" data-category="food">
+          <span class="sim-cat-icon">🍽️</span>
+          <span class="sim-cat-label">Food & Events</span>
+        </button>
+        <button class="sim-cat" data-category="vehicle">
+          <span class="sim-cat-icon">🚗</span>
+          <span class="sim-cat-label">Vehicles</span>
+        </button>
+        <button class="sim-cat" data-category="health">
+          <span class="sim-cat-icon">🏥</span>
+          <span class="sim-cat-label">Healthcare</span>
+        </button>
+        <button class="sim-cat" data-category="professional">
+          <span class="sim-cat-icon">💼</span>
+          <span class="sim-cat-label">Professional</span>
+        </button>
+      </div>
+
+      <div class="simulator-wrapper reveal">
+        <div class="sim-phone">
+          <div class="sim-phone-header">
+            <div class="sim-phone-back">←</div>
+            <div class="sim-phone-avatar">🤖</div>
+            <div class="sim-phone-info">
+              <span class="sim-phone-name">Bino</span>
+              <span class="sim-phone-status" id="simStatus">online</span>
+            </div>
+            <div class="sim-phone-actions">📞 📹</div>
+          </div>
+          <div class="sim-chat-area" id="simChatArea">
+            <div class="chat-date-badge">Today</div>
+            <!-- Messages injected by JS -->
+          </div>
+          <div class="sim-input-bar">
+            <span class="sim-emoji">😊</span>
+            <span class="sim-input-text">Type a message...</span>
+            <span class="sim-mic">🎤</span>
+          </div>
+        </div>
+        <div class="sim-cta-panel">
+          <h3>Impressed? Try it for real!</h3>
+          <p>This is exactly what happens when you message Bino. Your turn now.</p>
+          <a href="https://wa.me/919800081110" target="_blank" rel="noopener" class="btn btn-whatsapp btn-glow">
+            <span>💬</span> Message Bino Now
+          </a>
+          <p class="sim-number">or save the number: <strong>+91 98000 81110</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== AI QUERY BUILDER ======================== -->
+  <section id="query-builder">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">AI Query Builder</span>
+        <h2 class="section-title">Craft the Perfect First Message</h2>
+        <p class="section-subtitle">Don't know what to type? Pick a category, fill in your details, and we'll build the perfect WhatsApp message for you.</p>
+      </div>
+
+      <div class="builder-layout reveal">
+        <!-- Step 1: Category -->
+        <div class="builder-step" id="builderStep1">
+          <div class="step-header">
+            <span class="step-number">1</span>
+            <h3>What are you looking for?</h3>
+          </div>
+          <div class="builder-categories" id="builderCategories">
+            <button class="builder-cat" data-cat="home">
+              <span class="builder-cat-icon">🏠</span>
+              <span class="builder-cat-name">Home & Repairs</span>
+            </button>
+            <button class="builder-cat" data-cat="travel">
+              <span class="builder-cat-icon">✈️</span>
+              <span class="builder-cat-name">Travel & Stays</span>
+            </button>
+            <button class="builder-cat" data-cat="food">
+              <span class="builder-cat-icon">🍽️</span>
+              <span class="builder-cat-name">Food & Events</span>
+            </button>
+            <button class="builder-cat" data-cat="vehicle">
+              <span class="builder-cat-icon">🚗</span>
+              <span class="builder-cat-name">Vehicles</span>
+            </button>
+            <button class="builder-cat" data-cat="health">
+              <span class="builder-cat-icon">🏥</span>
+              <span class="builder-cat-name">Healthcare</span>
+            </button>
+            <button class="builder-cat" data-cat="professional">
+              <span class="builder-cat-icon">💼</span>
+              <span class="builder-cat-name">Professional</span>
+            </button>
+            <button class="builder-cat" data-cat="buysell">
+              <span class="builder-cat-icon">🛒</span>
+              <span class="builder-cat-name">Buy & Sell</span>
+            </button>
+            <button class="builder-cat" data-cat="other">
+              <span class="builder-cat-icon">✨</span>
+              <span class="builder-cat-name">Anything Else</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Details -->
+        <div class="builder-step hidden" id="builderStep2">
+          <div class="step-header">
+            <span class="step-number">2</span>
+            <h3>Tell us more</h3>
+          </div>
+          <div class="builder-form" id="builderForm">
+            <!-- Dynamic fields injected by JS -->
+          </div>
+          <div class="builder-form-actions">
+            <button class="btn btn-ghost" id="builderBack">← Back</button>
+            <button class="btn btn-primary" id="builderGenerate">Generate Message ⚡</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Result -->
+        <div class="builder-step hidden" id="builderStep3">
+          <div class="step-header">
+            <span class="step-number">3</span>
+            <h3>Your message is ready!</h3>
+          </div>
+          <div class="builder-result">
+            <div class="result-preview">
+              <div class="result-chat-bubble">
+                <p id="resultMessage"></p>
+              </div>
+            </div>
+            <div class="result-actions">
+              <a href="#" id="resultWhatsApp" target="_blank" rel="noopener" class="btn btn-whatsapp btn-glow btn-large">
+                <span>💬</span> Send to Bino on WhatsApp
+              </a>
+              <div class="result-secondary-actions">
+                <button class="btn btn-outline btn-small" id="resultCopyMsg">
+                  📋 Copy Message
+                </button>
+                <button class="btn btn-outline btn-small" id="resultShareUrl">
+                  🔗 Copy Shareable Link
+                </button>
+                <button class="btn btn-outline btn-small" id="resultShowQR">
+                  📱 Show QR Code
+                </button>
+              </div>
+            </div>
+            <!-- QR Code Modal -->
+            <div class="qr-section hidden" id="qrSection">
+              <div class="qr-card">
+                <h4>Scan to open in WhatsApp</h4>
+                <div id="qrCode"></div>
+                <p class="qr-hint">Point any phone camera at this code</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost" id="builderRestart">🔄 Build Another Query</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOR EVERYONE ======================== -->
+  <section id="for-everyone">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Bino for Everyone</span>
+        <h2 class="section-title">One Platform, Three Powerful Verticals</h2>
+        <p class="section-subtitle">Whether you're searching, selling, or creating — Bino has a place for you.</p>
+      </div>
+
+      <div class="tabs-wrapper reveal">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="users">
+            <span>🔍</span> For Users
+          </button>
+          <button class="tab-btn" data-tab="business">
+            <span>🏢</span> For Business
+          </button>
+          <button class="tab-btn" data-tab="creators">
+            <span>🎨</span> For Creators
+          </button>
+        </div>
+
+        <div class="tab-panels">
+          <!-- Users Tab -->
+          <div class="tab-panel active" id="tabUsers">
+            <div class="tab-content">
+              <div class="tab-info">
+                <h3>Your AI-Powered Search Assistant</h3>
+                <p>Search for anything on WhatsApp — get instant catalog options, custom quotes, price comparisons, and real-time offers.</p>
+                <ul class="feature-list">
+                  <li><span class="feature-icon">⚡</span> Instant results from verified businesses</li>
+                  <li><span class="feature-icon">📸</span> Send a photo, get custom quotes</li>
+                  <li><span class="feature-icon">💰</span> Price comparison across options</li>
+                  <li><span class="feature-icon">🎤</span> Works with text, voice notes, or photos</li>
+                  <li><span class="feature-icon">🌍</span> Available globally, 24/7</li>
+                </ul>
+                <div class="tab-cta">
+                  <a href="https://wa.me/919800081110" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    💬 Message Bino — +91 98000 81110
+                  </a>
+                </div>
+              </div>
+              <div class="tab-visual">
+                <div class="use-case-grid">
+                  <div class="use-case-card">🏠 Home & Repairs</div>
+                  <div class="use-case-card">✈️ Travel & Stays</div>
+                  <div class="use-case-card">🍽️ Food & Events</div>
+                  <div class="use-case-card">🚗 Vehicles</div>
+                  <div class="use-case-card">🏥 Healthcare</div>
+                  <div class="use-case-card">💼 Professional</div>
+                  <div class="use-case-card">🛒 Buy & Sell</div>
+                  <div class="use-case-card">✨ Anything Else</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Tab -->
+          <div class="tab-panel" id="tabBusiness">
+            <div class="tab-content">
+              <div class="tab-info">
+                <h3>Grow Your Business with Bino</h3>
+                <p>Join Bino's partner network. When customers nearby search for your services, you get notified instantly — respond with your best offer and win the job.</p>
+                <ul class="feature-list">
+                  <li><span class="feature-icon">📣</span> Get prioritized in customer inquiries</li>
+                  <li><span class="feature-icon">🤝</span> Join as a Preferred Partner</li>
+                  <li><span class="feature-icon">📦</span> B2B sourcing from trusted suppliers</li>
+                  <li><span class="feature-icon">🚀</span> Distribution support for new regions</li>
+                  <li><span class="feature-icon">📊</span> Data-driven market insights</li>
+                </ul>
+                <div class="tab-cta">
+                  <a href="https://wa.me/918024490265?text=I%20am%20interested%20in%20Bino%20for%20Business" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    💬 Join as Partner — +91 80244 90265
+                  </a>
+                  <a href="https://bino.bot/bino-business" target="_blank" rel="noopener" class="btn btn-outline btn-small">
+                    Learn More on bino.bot →
+                  </a>
+                </div>
+              </div>
+              <div class="tab-visual">
+                <div class="business-flow">
+                  <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <p>Customer searches on Bino</p>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <p>You get notified instantly</p>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <p>Send your best offer</p>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <p>Win the job! 🎉</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creators Tab -->
+          <div class="tab-panel" id="tabCreators">
+            <div class="tab-content">
+              <div class="tab-info">
+                <h3>Turn Local Trust Into Recurring Income</h3>
+                <p>Connect with nearby businesses, promote what you already love, and earn for every lead or sale you generate — not just a one-off post.</p>
+                <ul class="feature-list">
+                  <li><span class="feature-icon">💸</span> Earn per lead or revenue share — long-term</li>
+                  <li><span class="feature-icon">❤️</span> Work with brands you already love</li>
+                  <li><span class="feature-icon">📍</span> Hyperlocal deals in your city/pincode</li>
+                  <li><span class="feature-icon">📈</span> Transparent tracking via Bino Platform</li>
+                  <li><span class="feature-icon">🔄</span> Compounding income from repeat customers</li>
+                </ul>
+                <div class="tab-cta">
+                  <a href="https://wa.me/918277523880?text=Hi!%20I%20am%20a%20creator%20interested%20in%20joining%20Bino.%20My%20city%20and%20niche:" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    💬 Apply as Creator — +91 82775 23880
+                  </a>
+                  <a href="https://bino.bot/for-creators" target="_blank" rel="noopener" class="btn btn-outline btn-small">
+                    Learn More on bino.bot →
+                  </a>
+                </div>
+              </div>
+              <div class="tab-visual">
+                <div class="creator-benefits">
+                  <div class="benefit-card">
+                    <span class="benefit-icon">🎯</span>
+                    <h4>Performance-Based</h4>
+                    <p>Pay for outcomes, not just exposure</p>
+                  </div>
+                  <div class="benefit-card">
+                    <span class="benefit-icon">📊</span>
+                    <h4>Full Transparency</h4>
+                    <p>See leads, orders & repeat orders tracked live</p>
+                  </div>
+                  <div class="benefit-card">
+                    <span class="benefit-icon">🛡️</span>
+                    <h4>Ops Handled by Bino</h4>
+                    <p>Terms, tracking & service quality managed for you</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EMBED WIDGET ======================== -->
+  <section id="embed">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">For Developers & Partners</span>
+        <h2 class="section-title">Embed Bino on Your Website</h2>
+        <p class="section-subtitle">Add a "Search via Bino" button to your website with a single line of code. Help your visitors discover Bino and find what they need.</p>
+      </div>
+
+      <div class="embed-layout reveal">
+        <div class="embed-preview">
+          <h4>Preview</h4>
+          <div class="embed-preview-box">
+            <div class="embed-widget-preview">
+              <div class="embed-widget-btn">
+                <span>🔍</span> Search via Bino
+              </div>
+              <p class="embed-widget-sub">Powered by <a href="https://bino.bot" target="_blank" rel="noopener">bino.bot</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="embed-code-area">
+          <div class="embed-options">
+            <h4>Customize</h4>
+            <div class="embed-option">
+              <label for="embedStyle">Style</label>
+              <select id="embedStyle">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+                <option value="green">WhatsApp Green</option>
+              </select>
+            </div>
+            <div class="embed-option">
+              <label for="embedSize">Size</label>
+              <select id="embedSize">
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+          </div>
+          <h4>Embed Code</h4>
+          <div class="code-block">
+            <pre id="embedCodePre"><code id="embedCode"></code></pre>
+            <button class="copy-btn" id="copyEmbedCode">📋 Copy Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FINAL CTA ======================== -->
+  <section id="final-cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>Ready to Find Anything, Anywhere?</h2>
+        <p>Join thousands of people who use Bino every day to search, compare, and connect — all on WhatsApp.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/919800081110" target="_blank" rel="noopener" class="btn btn-whatsapp btn-glow btn-large">
+            💬 Message Bino Now
+          </a>
+        </div>
+        <p class="cta-number">WhatsApp: <strong>+91 98000 81110</strong> (or save as <strong>98000-BINO</strong>)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">🔍</span>
+          <span class="logo-text">Bino <span class="logo-sub">Explorer</span></span>
+          <p>An interactive growth tool built to showcase how Bino works and help new users get started.</p>
+          <p class="footer-official">🔗 Official website: <a href="https://bino.bot" target="_blank" rel="noopener">bino.bot</a></p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Bino Official</h4>
+          <ul>
+            <li><a href="https://bino.bot" target="_blank" rel="noopener">Home</a></li>
+            <li><a href="https://bino.bot/travel" target="_blank" rel="noopener">Travel</a></li>
+            <li><a href="https://bino.bot/bino-business" target="_blank" rel="noopener">For Business</a></li>
+            <li><a href="https://bino.bot/for-creators" target="_blank" rel="noopener">For Creators</a></li>
+            <li><a href="https://bino.bot/blog" target="_blank" rel="noopener">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Contact Bino</h4>
+          <ul>
+            <li><a href="https://wa.me/919800081110" target="_blank" rel="noopener">💬 Users: +91 98000 81110</a></li>
+            <li><a href="https://wa.me/918024490265" target="_blank" rel="noopener">🏢 Business: +91 80244 90265</a></li>
+            <li><a href="https://wa.me/918277523880" target="_blank" rel="noopener">🎨 Creators: +91 82775 23880</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://bino.bot/terms" target="_blank" rel="noopener">Terms & Conditions</a></li>
+            <li><a href="https://bino.bot/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><a href="https://bino.bot/partnerTerms" target="_blank" rel="noopener">Partner Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Bino Explorer — Built with ❤️ to help more people discover <a href="https://bino.bot" target="_blank" rel="noopener">Bino</a></p>
+        <p class="footer-disclaimer">This is an independent project showcasing Bino's capabilities. Bino is a product of <strong>Bohni Tech Pvt. Ltd.</strong> © 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast hidden" id="toast">
+    <span id="toastMsg"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
