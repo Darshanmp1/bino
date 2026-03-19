@@ -1,5 +1,7 @@
 # Bino Explorer
 
+project live link-https://bino-eight.vercel.app/
+
 A small web tool I built to help people discover and try [Bino](https://bino.bot) — a WhatsApp-based search service.
 
 The idea is simple: most people hear about Bino but don't know what to message or how it works. This page fixes that.
