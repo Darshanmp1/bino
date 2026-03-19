@@ -1482,8 +1482,8 @@ section {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: var(--space-3xl);
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: var(--space-xl);
   margin-bottom: var(--space-3xl);
 }
 

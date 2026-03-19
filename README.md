@@ -13,6 +13,7 @@ The idea is simple: most people hear about Bino but don't know what to message o
 - **Shareable Links** — Every query creates a unique URL you can share with friends. They see the demo + can send the message themselves.
 - **Embed Widget** — Copy-paste a code snippet to add a "Search via Bino" button on any website.
 - **3-Vertical View** — Shows Bino's offerings for Users, Businesses, and Creators with the right WhatsApp number for each.
+- **Official Socials** — Integrated real Instagram, LinkedIn, and Facebook links from bino.bot.
 
 ## Why I built this
 
